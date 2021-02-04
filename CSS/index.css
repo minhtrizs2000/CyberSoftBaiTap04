@@ -26,6 +26,7 @@ header{
 }
 .header__content a:hover{
     color: #204b87;
+    text-decoration: none;
 }
 
 /* ===================================================================================== */
@@ -43,6 +44,7 @@ header{
 .nav__logo{
     font-size: 36px;
     padding: 10px 0;
+    cursor: pointer;
 }
 .nav__logo i{
     color: #204b87;
@@ -77,9 +79,11 @@ header{
 }
 .nav__menu a{
     transition: 0.5s;
+    color: #000000;
 }
 .nav__menu a:hover{
     color: #ff9800;
+    text-decoration: none;
 }
 
 /* ====================================================== */
@@ -273,14 +277,15 @@ header{
 }
 .banner__text p{
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 2px;
     line-height: 2em;
     margin-bottom: 40px;
 }
 .banner__text h4{
     color: #ffffff;
-    line-height: 3em;
+    line-height: 2em;
+    font-size: 20px;
 }
 
 /* ===================================================================================== */
@@ -379,9 +384,11 @@ header{
     color: #ffffff;
 }
 .feedback__content .item p{
-    background-color: #ffffff70;
+    font-size: 16px;
+    background-color: #ffffff49;
     letter-spacing: 2px;
-    padding: 20px;
+    padding: 10px;
+    margin: 0 30px;
 }
 .feedback__content .item{
     position: relative;
@@ -645,6 +652,10 @@ form {
     color: #fff;
     width: 20%;
     border: none;
+    transition: 0.5s;
+}
+.footer__signup input[type="submit"]:hover{
+    background: #ff9800;
 }
 
 /* ====================================================== */
@@ -658,4 +669,28 @@ form {
 .footer__copyRight a{
     color: #ff9800;
     text-decoration: underline;
+    transition: 0.5s;
+}
+.footer__copyRight a:hover{
+    color: #ffffff;
+}
+
+/* ===================================================================================== */
+/* ===================================================================================== */
+/* BACKTOTOP BUTTON */
+.backToTop{
+    display: block;
+
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }
